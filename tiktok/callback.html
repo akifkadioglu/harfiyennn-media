@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harfiyen TikTok</title><link rel="stylesheet" href="../style.css">
+<h1>TikTok bağlandı</h1>
+<p>Bu kodu Claude'a ver:</p>
+<p><code id="c"></code></p>
+<script>
+const q=new URLSearchParams(location.search);
+document.getElementById('c').textContent=q.get('code')||q.get('error_description')||'kod yok';
+</script>
